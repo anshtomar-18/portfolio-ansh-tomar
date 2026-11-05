@@ -126,20 +126,23 @@
   height: auto;
 }
 
-.portfolio-repo-btn-div .main-button,
-.portfolio-repo-btn {
-  background: linear-gradient(180deg, #2a174e 0%, #1e0e3a 100%) !important;
-  border: 1px solid #3b246b !important;
+.greeting-resume-btn .main-button {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+  border: 1px solid #4f46e5 !important;
   color: #ffffff !important;
   border-radius: 8px !important;
-  box-shadow: 0 4px 14px rgba(35, 18, 65, 0.3) !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+  padding: 12px 24px !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.28) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-.portfolio-repo-btn-div .main-button:hover,
-.portfolio-repo-btn:hover {
-  background: linear-gradient(180deg, #372064 0%, #261448 100%) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 6px 18px rgba(35, 18, 65, 0.4) !important;
+.greeting-resume-btn .main-button:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%) !important;
+  border-color: #4338ca !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.42) !important;
 }
 
 /* Media Query */
@@ -173,12 +176,6 @@
   }
   .greeting-main {
     display: block;
-  }
-
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   .wave-top-left {
