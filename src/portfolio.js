@@ -267,18 +267,18 @@ const certifications = {
     {
       title: "Smart India Hackathon 2026",
       subtitle: "Finalist & Cleared College Round 2025",
-      logo_path: "google_logo.png",
+      logo_path: "sih_logo.jpg",
       certificate_link: "#",
-      alt_name: "SIH",
-      color_code: "#FF990099",
+      alt_name: "Smart India Hackathon",
+      color_code: "#FFFFFF",
     },
     {
       title: "Data Analytics Virtual Experience",
       subtitle: "Deloitte Certified",
-      logo_path: "ibm_logo.png",
+      logo_path: "deloitte_logo.png",
       certificate_link: "#",
       alt_name: "Deloitte",
-      color_code: "#86BC2599",
+      color_code: "#FFFFFF",
     },
     {
       title: "Generative AI",
