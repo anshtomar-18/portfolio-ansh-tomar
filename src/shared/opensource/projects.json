@@ -1,0 +1,96 @@
+{
+  "data": [
+    {
+      "id": "proj-swasthya-sathi-ai",
+      "name": "SwasthyaSathi-AI",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "url": "https://github.com/anshtomar-18/SwasthyaSathi-AI",
+      "description": "Privacy-first health platform analyzing real-time weather and AQI data to provide personalized risk alerts and preventive recommendations. Built with Next.js 14, TypeScript, Tailwind CSS, Supabase (PostgreSQL), and Open-Meteo API.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos-tailwindcss-icon"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "logos-postgresql"
+        }
+      ]
+    },
+    {
+      "id": "proj-mosip-labs",
+      "name": "mosip-labs",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "url": "https://github.com/anshtomar-18/mosip-labs",
+      "description": "Java USSD Proxy Service integrating telecom gateways with MOSIP APIs to deliver offline identity verification for basic feature mobile devices without internet connectivity.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-margdarshak-ai",
+      "name": "margdarshak-ai",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "url": "https://github.com/anshtomar-18/margdarshak-ai",
+      "description": "Multilingual career counselling platform for MSDE helping learners and parents evaluate NSQF vocational trades using verified career outcomes, semantic RAG matching (pgvector), and data-driven insights.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "logos-postgresql"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos-tailwindcss-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-swasthya-sathi-android",
+      "name": "swasthya-sathi-android",
+      "createdAt": "2026-01-01T00:00:00Z",
+      "url": "https://github.com/anshtomar-18/swasthya-sathi-android",
+      "description": "Native Android app delivering personalized environmental health alerts, symptom guidance, and SOS assistance using real-time weather and AQI data. Built with Kotlin, Jetpack Compose, Material 3, and Coroutines.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Kotlin",
+          "iconifyClass": "logos-kotlin-icon"
+        },
+        {
+          "name": "Android",
+          "iconifyClass": "logos-android-icon"
+        }
+      ]
+    }
+  ]
+}

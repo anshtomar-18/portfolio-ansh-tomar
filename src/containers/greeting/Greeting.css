@@ -1,0 +1,193 @@
+.greet-wrapper {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  padding: 1rem 0 2rem 0;
+}
+
+.wave-blob {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wave-top-left {
+  top: 0;
+  left: 0;
+  width: 440px;
+  max-width: 46vw;
+  height: auto;
+  opacity: 0.9;
+}
+
+.wave-bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  max-width: 50vw;
+  height: auto;
+  opacity: 0.9;
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+
+.hero-illustration-glow {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 500px;
+  height: 500px;
+  max-width: 48vw;
+  max-height: 48vw;
+  background: radial-gradient(
+    circle,
+    rgba(200, 216, 255, 0.45) 0%,
+    rgba(234, 242, 255, 0.3) 45%,
+    rgba(247, 245, 255, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(28px);
+}
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+  background: transparent;
+}
+
+.greet-main {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 1rem;
+  background: transparent;
+}
+
+.gretting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  background: transparent;
+}
+
+.greeting-main {
+  display: flex;
+  align-items: center;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 24px;
+}
+
+.greeting-text {
+  margin-top: 32px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.greeting-nickname {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin-top: 6px;
+}
+
+.greeting-text-p {
+  font-size: 18px;
+  line-height: 1.65;
+  margin-top: 18px;
+  margin-right: 32px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.greeting-image-div {
+  position: relative;
+  z-index: 1;
+}
+
+.greeting-image-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-repo-btn-div .main-button,
+.portfolio-repo-btn {
+  background: linear-gradient(180deg, #2a174e 0%, #1e0e3a 100%) !important;
+  border: 1px solid #3b246b !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px rgba(35, 18, 65, 0.3) !important;
+}
+
+.portfolio-repo-btn-div .main-button:hover,
+.portfolio-repo-btn:hover {
+  background: linear-gradient(180deg, #372064 0%, #261448 100%) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 18px rgba(35, 18, 65, 0.4) !important;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 40px;
+  }
+  .greeting-text-p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: center;
+  }
+  .greeting-text {
+    font-size: 32px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .greeting-nickname {
+    font-size: 18px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wave-top-left {
+    width: 250px;
+    max-width: 60vw;
+  }
+
+  .wave-bottom-right {
+    width: 270px;
+    max-width: 65vw;
+  }
+}

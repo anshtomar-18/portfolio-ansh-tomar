@@ -1,0 +1,158 @@
+.degree-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.card-subtitle {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.card-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-header {
+  max-width: inherit;
+  display: flex;
+  border-radius: 12px 12px 0px 0px;
+  padding: 16px 20px;
+}
+
+.body-header-title {
+  align-items: flex-start;
+  width: 80%;
+}
+
+.body-header-duration {
+  width: 20%;
+}
+
+.duration {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 10px;
+  float: right;
+}
+
+.body-content {
+  max-width: inherit;
+  border-radius: 0px 0px 12px 12px;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.content-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.card-body {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-body:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.visit-btn {
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 0px;
+  float: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.visit-btn:hover {
+  opacity: 0.9;
+}
+
+.btn {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", -apple-system, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .degree-card {
+    flex-direction: column;
+  }
+
+  .body-header {
+    flex-direction: column;
+  }
+
+  .body-header-title {
+    width: 100%;
+  }
+
+  .body-header-duration {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .duration {
+    padding: 0px;
+    margin-top: 4px;
+    float: left;
+  }
+
+  .card-img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 16px;
+  }
+
+  .card-body {
+    width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+  }
+}

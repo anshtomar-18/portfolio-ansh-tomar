@@ -1,0 +1,162 @@
+/* Modern Minimalist Header */
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(247, 245, 255, 0.82);
+  border-bottom: 1px solid rgba(220, 213, 255, 0.45);
+  transition: all 0.2s ease-in-out;
+}
+
+.header {
+  display: block;
+  max-width: 90%;
+  padding: 16px 10px;
+  margin: 0px auto;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.grey-color {
+  color: #64748b;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  float: left;
+  text-decoration: none;
+  line-height: normal;
+  padding: 8px 0;
+}
+
+.header .logo-name {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.header .logo-dot {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-left: 1px;
+}
+
+/* menu */
+
+.menu {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 16px 10px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #1e293b;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #1e293b;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 370px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* Desktop styles */
+
+@media (min-width: 69em) {
+  .header li {
+    float: left;
+    margin-left: 4px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .menu {
+    max-height: none;
+    display: flex;
+    align-items: center;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
